@@ -13,8 +13,11 @@ record="dynamic"
 # Change this to the name of the file containing the API key
 apiFilename="apikey"
 
+# Get full path
+currentDir="/home/userfake/scripts/pathtothisfile";
+
 # DON'T CHANGE BELOW
-currentDir=$(pwd);
+
 
 /usr/bin/python3 $currentDir/updater.py $(cat $currentDir/$apiFilename) $domain $record
 
